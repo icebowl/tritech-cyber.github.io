@@ -1,57 +1,175 @@
+
 <!DOCTYPE html>
 <html>
+<head><title>tritechsc.github.io</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
 
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Redefining Grid Areas with Media Queries</title>
-	  <link rel="stylesheet" href="css/common.css" />
-  </head>
-    <body>
-     <!-- Sidebar -->
+html, body, #header {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Lucida Sans", sans-serif;
+}
+body{   
+    margin:0;    padding: 0;
+    background:#fff;
+    }
+
+.header {
+    background-color: #fff;
+    
+
+    color: #777777;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color : #fff;
+     text-decoration: none;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #6981c7;
+    color: #fff;
+    font-weight: bold;
+     text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #425c9f;
+    color: #f0f0f0;
+     text-decoration: none;
+}
+a{
+	color: #fff;
+	font-weight: bold;
+text-decoration: none;	
+}
+a.link{
+display:inline-block;
+font-family:sans-serif;
+font-size: 24px;
+padding: 3px 3px 3px 3px;
+background-color:#fff;
+color:#777;
+text-decoration: none;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+a.link:hover {
+font-family:sans-serif;
+ color:#8eb1e1;
+ text-decoration: none;
+}
+.aside {
+    background-color: #6981c7;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #425c9f;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+425c9f
+
+6981c7
+
+8eb1e1
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+</style>
+</head>
+
+<body>
+
 <div class="header">
-	<div class="wrapper">
-      <h1><a href="/">iuomo</a></h1>
-      <p>CSS Grid Layout firefox.</p>
-      <img src = "img/header.png">
-    </div>
+<img src = "img/tritechsc.github.io.png" > <img src = "img/tritechsc.png" ><img src = "octo/socialite.png" height = "80"><br />
+  	<a href="http://tritechsc.github.io" class = "link">home</a>
+	<a href = "https://github.com/tritechsc/arduino" class = "link"> arduino repos </a>
+	<a href="https://github.com/tritechsc?tab=repositories" class = "link" >tritechsc repos</a>
 </div>
 
-<nav class="main">
-  <ul class="nav">
-    <li><a href="/what">What is Grid Layout?</a></li>
-    <li><a href="/examples">Learn Grid Layout</a></li>
-    <li><a href="/browsers">Browser Support</a></li>
-    <li><a href="/resources">Resources</a></li>
-    <li><a href="/posts">Blog</a></li>
+<div class="row">
+<div class="col-3 col-m-3 menu">
+  <ul>
+    <li>Organizations</li>
+		<li><a href = "https://github.com/tritech-imagine"  target = "_blank" > TriTech-Imagine</a>
+		<li><a href = "	https://github.com/tritech-cyber" target = "_blank"> TriTech-Cyber (NEW)</a>
+    	<li><a href = "https://github.com/ttcyber" target = "_blank"> TTCyber</a>
+    	<li><a href = "https://github.com/tritech-cyberpatriot" target = "_blank"> TriTech-CyberPatriot</a>
+
   </ul>
-</nav>
+</div>
 
-    <ul class="subnav">
-  <li><a href="/examples" class="selected">Simple examples</a></li>
-  <li><a href="/patterns">UI Patterns</a></li>
-  <li><a href="/video">Video tutorial</a></li>
-  <li><a href="/examples/page-layout">Page Layouts</a></li>
-</ul>
+<div class="col-6 col-m-9">
+  
+  <iframe height="400px" width="100%" src="intro.html" name="iframea" style="border:none";></iframe>
 
-    <div class="wrapper">
+</div>
 
+<div class="col-3 col-m-12">
+  <div class="aside">
+    <h3><a href = "sites.html" target = "iframea">*?tab=repositories</a></h3>
+  </div>
+</div>
+</div>
+<div class="footer">
+  <p>425c9f		6981c7	8eb1e1	</p>
+</div>
 
-        <h1>Redefining Grid Areas with Media Queries</h1>
-
-
-        <div class="examplecontent">
-        <p>We can easily redefine the grid and the position of the elements on it using Media Queries. I define the Grid Areas as before outside of the Media Queries and then redefine the Grid Tracks and the position of the elements onto that grid inside my Media Queries.</p>
-
-
-        <p>Read the <a href="https://drafts.csswg.org/css-grid/#grid-definition">specification</a> | <a href="/examples/code/example13.html">View example as full page</a></p>
-
-        <p data-height="565" data-theme-id="0" data-slug-hash="waVBpK" data-default-tab="result" data-user="rachelandrew" class="codepen">See the Pen <a href="http://codepen.io/rachelandrew/pen/waVBpK/">Grid by Example 13: Redefining grid areas with media queries</a> by rachelandrew (<a href="http://codepen.io/rachelandrew">@rachelandrew</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-      </div>
-      <div class="back">⇦ <a href="/examples">Back to list of examples</a></div>
-    </div>
-    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </body>
-
 </html>
